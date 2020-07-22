@@ -1,0 +1,2129 @@
+{
+	"$ROOT_QUERY.watchdogs": {
+		"__typename": "ClientWatchdogs",
+		"list": {
+			"type": "json",
+			"json": []
+		}
+	},
+	"ROOT_QUERY": {
+		"watchdogs": {
+			"type": "id",
+			"generated": true,
+			"id": "$ROOT_QUERY.watchdogs",
+			"typename": "ClientWatchdogs"
+		},
+		"RequestHeaders": {
+			"type": "id",
+			"generated": true,
+			"id": "$ROOT_QUERY.RequestHeaders",
+			"typename": "RequestHeaders"
+		},
+		"PendingQueries": {
+			"type": "id",
+			"generated": true,
+			"id": "$ROOT_QUERY.PendingQueries",
+			"typename": "PendingQueries"
+		},
+		"ProductSsrData": {
+			"type": "id",
+			"generated": false,
+			"id": "ProductSsrData:67469",
+			"typename": "ProductSsrData"
+		},
+		"currentLocale": {
+			"type": "id",
+			"generated": false,
+			"id": "Locale:19",
+			"typename": "Locale"
+		},
+		"currentCurrency": {
+			"type": "id",
+			"generated": false,
+			"id": "Currency:1",
+			"typename": "Currency"
+		},
+		"languagedMessages": {
+			"type": "id",
+			"generated": true,
+			"id": "$ROOT_QUERY.languagedMessages",
+			"typename": "LanguagedMessage"
+		},
+		"resolveUrl({\"url\":\"/chloe/chloe-eau-de-parfum-per-donna/\"})": {
+			"type": "id",
+			"generated": false,
+			"id": "PathView:/chloe/chloe-eau-de-parfum-per-donna/",
+			"typename": "PathView"
+		},
+		"productDetailByMasterId({\"masterId\":\"67469\"})": [
+			{
+				"type": "id",
+				"generated": false,
+				"id": "Product:67469",
+				"typename": "Product"
+			}
+		],
+		"Settings": {
+			"type": "id",
+			"generated": true,
+			"id": "$ROOT_QUERY.Settings",
+			"typename": "Settings"
+		},
+		"userProductsInfoByMasterIds({\"masterIds\":[\"67469\"]})": [
+			{
+				"type": "id",
+				"generated": true,
+				"id": "ROOT_QUERY.userProductsInfoByMasterIds({\"masterIds\":[\"67469\"]}).0",
+				"typename": "UserProductInfo"
+			}
+		],
+		"user": {
+			"type": "id",
+			"generated": false,
+			"id": "User:0",
+			"typename": "User"
+		}
+	},
+	"$ROOT_QUERY.RequestHeaders": {
+		"__typename": "RequestHeaders",
+		"groupId": "350",
+		"role": "Anonymous",
+		"userId": "0",
+		"userEmail": "",
+		"shopId": "notino.it",
+		"acceptLanguage": "it-IT",
+		"authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyUm9sZSI6IkFub255bW91cyIsIlVzZXJJZCI6IjAiLCJVc2VyRW1haWwiOiIiLCJHcm91cElkIjoiMzUwIiwiQ2FydElkIjoiODE1NDAwMDAtNTY4NS0wMDUwLThDQTYtMDhEODIyNUNEODA5IiwiR3JkIjoiNTg1MDcxMjQxMjAyMjM4NjIiLCJDb21wYXJpc29uUHJvZHVjdElkcyI6IltdIiwiaWF0IjoxNTk1NDIxMzkwfQ.fESU2HCr9n3tlWF0VQ_q08Bc9TToMMKtme97x4ghhi4",
+		"gatewayUrl": "https://nushop.notino.com",
+		"assetsPath": "https://cdn.notinoimg.com/files/product-renderer/",
+		"sentryDsn": "https://da45236fbdaf47b7a4f551d24e3bdbd6@events-sentry.k8s.notino.dev/2",
+		"sentryEnvironment": "production",
+		"originUrl": null,
+		"mounts": {
+			"type": "json",
+			"json": [
+				"app-38238669-dc06-4c96-9757-625b38081039"
+			]
+		},
+		"span": null,
+		"features": "RenderWithoutFallback,ShowBreadcrumb,ShowLastVisited,UseServerSideRender"
+	},
+	"$ROOT_QUERY.PendingQueries": {
+		"__typename": "PendingQueries",
+		"count": 1
+	},
+	"ProductSsrData:67469": {
+		"__typename": "ProductSsrData",
+		"id": 67469,
+		"type": "ProductDetailSimple",
+		"pathname": "/chloe/chloe-eau-de-parfum-per-donna/",
+		"productId": 67469
+	},
+	"Locale:19": {
+		"id": 19,
+		"tag": "it-IT",
+		"currency": "EUR",
+		"priceDecimalPlaces": 2,
+		"priceFormat": "s v",
+		"__typename": "Locale"
+	},
+	"Currency:1": {
+		"id": 1,
+		"code": "EUR",
+		"symbol": "€",
+		"__typename": "Currency"
+	},
+	"$ROOT_QUERY.languagedMessages": {
+		"acceptLanguage": "it-IT",
+		"messages": {
+			"type": "json",
+			"json": {
+				"review.rating.parfums.designFlakon": "Aspetto del flacone",
+				"review.rating.parfums.persistenceScent": "Durata del profumo",
+				"review.rating.parfums.intensity": "Intensità",
+				"review.rating.parfums.overallImpresion": "Impressione generale",
+				"review.rating.cosmetics.simplicityApplication": "Facilità di applicazione",
+				"review.rating.cosmetics.cosmeticQuality": "Qualità del cosmetico",
+				"review.rating.cosmetics.totalHappiness": "Soddisfazione per il risultato",
+				"delivery.checkout.forfree": "gratis",
+				"parfums.opening.hour": "",
+				"parfums.top.notes.description": "Note di testa: si sviluppano subito dopo l'applicazione. Suscitano la prima impressione e di solito sono molto intense, svaniscono rapidamente.",
+				"parfums.middle.notes.description": "Note di cuore: si sviluppano di solito dopo pochi minuti, dopo che sono svanite le note di testa. Normalmente persistono per 2-3 ore.",
+				"parfums.base.notes.description": "Note di fondo: è l'ultima e la più lunga fase del profumo. Persistono per circa 4 ore, a volte per l'intera giornata.",
+				"pd.breadcrumb.brand": "Marche",
+				"pd.add.to.cart": "Aggiungi al carrello",
+				"pd.attribute.new": "",
+				"pd.attribute.specialoffer": "",
+				"pd.availability.lessThan5": "Mancano gli ultimi {count} pezzi",
+				"pd.availability.moreThan20": "In magazzino",
+				"pd.availability.moreThan5": "Più di 5 pezzi in pronta consegna",
+				"pd.availability.outOfStock": "Questo articolo non è attualmente disponibile",
+				"pd.code": "Codice:",
+				"pd.delivery.description": "I tempi di consegna sono puramente informativi, sono stati calcolati sulla base dei tempi di consegna dei corrieri.",
+				"pd.delivery.personal": "Ritiro di persona",
+				"pd.delivery.today": "già oggi",
+				"pd.delivery.tomorrow": "già domani",
+				"delivery.whereever": "In tutta Italia",
+				"pd.discount": "Sconto",
+				"pd.error.default.description": "Riprova più tardi o contattaci all'indirizzo info@notino.it",
+				"pd.error.default.header": "Siamo spiacenti.",
+				"pd.error.default.subheader": "La richiesta non può essere elaborata.",
+				"pd.error.service.description": "Riprova più tardi o contattaci all'indirizzo info@notino.it",
+				"pd.error.service.header": "Siamo spiacenti.",
+				"pd.error.service.subheader": "Il servizio non è al momento disponibile.",
+				"pd.giftForYou": "Un regalo per te",
+				"pd.not.available": "non è disponibile",
+				"pd.productVolume": "Contenuto",
+				"pd.rrp": "Prezzo consigliato al dettaglio",
+				"pd.watch.availability": "Segui la disponibilità",
+				"pd.watchdog.close.button": "",
+				"pd.watchdog.email.label": "Inserisci la tua e-mail",
+				"pd.watchdog.header": "Segui la disponibilità del prodotto",
+				"pd.watchdog.send.button": "Invia",
+				"pd.watchdog.sent.text": "Ti terremo informato/a sulle modifiche della disponibilità di questo prodotto.",
+				"pd.watchdog.text": "Saremo lieti di informarti via e-mail quando il prodotto sarà disponibile in pronta consegna. Ovviamente deciderai tu se sfruttare o meno l’offerta.",
+				"product.add.to.cart": "",
+				"product.attribute.clearance": "",
+				"product.attribute.new": "",
+				"product.attribute.specialoffer": "",
+				"product.price.from": "",
+				"product.variants": "",
+				"relatedProducts.related": "Prodotti correlati",
+				"tnb.about.description": "Sappiamo che non è facile scegliere un profumo se non sai che fragranza ha. Pertanto, ti offriamo l'opportunità di testare i profumi che ti hanno colpito tra quelli offerti dal nostro sito. Ordina la busta con le cartoline profumate secondo il tuo gusto e tra un paio di giorni sarà a casa tua!",
+				"tnb.about.header": "Scegli 5 profumi della nostra offerta e provali sulle cartoline profumate.",
+				"tnb.about.subheader": "Te le invieremo gratuitamente.",
+				"tnb.error.Invalid.description": "La pagina scade tra 24 ore, poi non sarà più possibile completare l'ordine. In caso di problemi, contattaci su {email}.",
+				"tnb.error.Invalid.header": "Siamo spiacenti,",
+				"tnb.error.Invalid.subheader": "questa pagina è scaduta.",
+				"tnb.error.Used.description": "In caso di problemi, contattaci su {email}.",
+				"tnb.error.Used.header": "L'ordine è stato completato",
+				"tnb.error.Used.subheader": "e non è possibile ordinare nuovamente.",
+				"tnb.error.default.description": "Riprova più tardi o contattaci su {email}.",
+				"tnb.error.default.header": "Siamo spiacenti,",
+				"tnb.error.default.subheader": "il servizio non è al momento disponibile.",
+				"tnb.error.order.description": "",
+				"tnb.error.order.header": "",
+				"tnb.error.order.subheader": "",
+				"tnb.error.service.description": "",
+				"tnb.error.service.header": "",
+				"tnb.error.service.subheader": "",
+				"tnb.input.address": "Via e numero civico",
+				"tnb.input.address.error.required": "Si prega di inserire la via e il numero civico",
+				"tnb.input.city": "Città o comune",
+				"tnb.input.city.error.required": "Inserire la città o il comune",
+				"tnb.input.email": "E-mail",
+				"tnb.input.email.error.failed": "Durante il controllo dell'indirizzo e-mail si è verificato un errore",
+				"tnb.input.email.error.invalid": "Inserire un indirizzo e-mail valido",
+				"tnb.input.email.error.required": "Inserire un indirizzo e-mail",
+				"tnb.input.email.error.taken": "Questo indirizzo e-mail è già stato utilizzato",
+				"tnb.input.name": "Nome e cognome",
+				"tnb.input.name.error.required": "Inserire nome e cognome",
+				"tnb.input.name.help": "Nome e cognome devono coincidere con quelli indicati sulla cassetta postale",
+				"tnb.input.phone": "Telefono/cellulare",
+				"tnb.input.phone.error.invalid": "Inserire un numero di telefono valido",
+				"tnb.input.phone.error.required": "Inserire il numero di telefono",
+				"tnb.input.promo": "Nome e cognome",
+				"tnb.input.zip": "CAP",
+				"tnb.input.zip.error.invalid": "Inserire un CAP valido",
+				"tnb.input.zip.error.required": "Inserire il CAP",
+				"tnb.list.detail": "dettagli",
+				"tnb.notes.accept": "Accetta",
+				"tnb.notes.contact.header": "Per ordinare, si prega di compilare i seguenti dati.",
+				"tnb.notes.contact.subheader": "In questo modo sapremo a chi inviare i campioni.",
+				"tnb.notes.submit": "Ordina",
+				"tnb.notes.tac": "termini dei servizi",
+				"tnb.notes.tac.error.required": "Per completare l'ordine è necessario accettare le condizioni contrattuali",
+				"tnb.notes.tacContent": "La società Notino Italia s.r.l. offre ai propri clienti il servizio Notino Try&amp;Buy. Il cliente ha la possibilità di farsi inviare gratuitamente campioni di profumi secondo l'offerta attuale del negozio online www.notino.it (\"negozio online\") allo scopo di provarli. {newLine} La selezione dei campioni è limitata dalle scorte disponibili e dall'offerta attuale del negozio online per il servizio Notino Try&amp;Buy. {newLine} Il servizio Try&amp;Buy ha lo scopo di informare il cliente sull'offerta del negozio online e non si tratta della definizione della qualità o della produzione in base al campione concordato ai sensi dell'articolo 2096 [VM1] del Codice civile. Il servizio Try&amp;Buy è gratuito e a scopo promozionale. Questo servizio non va interpretato come una promessa pubblica o un ordine vincolante. Le altre disposizioni delle condizioni commerciali si applicano in una misura che non sia in contrasto con il senso e lo scopo del servizio.",
+				"tnb.pickerheader.choose": "Scegli un campione o",
+				"tnb.pickerheader.error.required": "Scegli un campione",
+				"tnb.pickerheader.leave": "lascia fare a noi",
+				"tnb.thanks.contactInfo.header": "Indirizzo di recapito e informazioni di contatto",
+				"tnb.thanks.description.line1": "La conferma dell'ordine è stata inviata al tuo indirizzo e-mail",
+				"tnb.thanks.description.line2": "Il numero d'ordine è",
+				"tnb.thanks.header.line1": "Grazie.",
+				"tnb.thanks.header.line2": "L'ordine è stato inviato.",
+				"tnb.thanks.question.header": "Vuoi cambiare qualcosa nel tuo ordine?",
+				"tnb.thanks.question.text": "Se ti sei accorto/a di un errore nel tuo ordine o vuoi cambiare qualcosa, non esitare a contattarci via e-mail all’indirizzo {email} oppure telefonicamente al numero {phone}.",
+				"tnb.thanks.subheader": "Tra pochi giorni riceverai una lettera profumata creata esattamente secondo la tua scelta.",
+				"tnb.thanks.summary.header": "Riceverai le seguenti fragranze:",
+				"api.gender.man": "",
+				"api.gender.woman": "",
+				"sampling.thanks.header.line1": "Grazie.",
+				"sampling.thanks.header.line2": "L'ordine è stato inviato.",
+				"sampling.thanks.subheader": "Tra pochi giorni riceverai una lettera profumata.",
+				"sampling.send.order": "Ordina",
+				"sampling.notes.tac": "termini dei servizi",
+				"sampling.notes.tacContent": "La società Notino Italia s.r.l. offre ai propri clienti il servizio Notino Try&amp;Buy e il servizio Invio di campioni gratuiti. Il cliente ha la possibilità di farsi inviare gratuitamente campioni di profumi secondo l'offerta attuale del negozio online www.notino.it (\"negozio online\") allo scopo di provarli. {newLine} La selezione dei campioni è limitata dalle scorte disponibili e dall'offerta attuale del negozio online per il servizio Notino Try&amp;Buy. {newLine} Il servizio Try&amp;Buy e il servizio Invio di campioni gratuiti hanno lo scopo di informare il cliente sull'offerta del negozio online e non si tratta della definizione della qualità o della produzione in base al campione concordato ai sensi dell'articolo 2096 del Codice civile. Il servizio Try&amp;Buy e il servizio Invio di campioni gratuiti sono gratuiti e a scopo promozionale. Il cliente può essere contattato per verificare se è soddisfatto del prodotto selezionato e, richiedendo l'invio del prodotto, accetta di essere contattato. Questi servizi non vanno interpretati come una promessa pubblica o un ordine vincolante. Le altre disposizioni delle condizioni commerciali si applicano in una misura che non sia in contrasto con il senso e lo scopo dei servizi.",
+				"sampling.send.retry": "Riprova",
+				"attribute.action": "Offerte",
+				"attribute.clearance": "Sconti",
+				"attribute.damage": "Sconti speciali",
+				"attribute.freedelivery": "Spedizione gratuita",
+				"attribute.new": "Novità",
+				"brand.about": "Informazioni sul marchio {brandName}",
+				"javascript.not.enabled": "Il tuo Javascript è disattivato, pertanto il sito internet potrebbe non funzionare correttamente.",
+				"order.reviews.by.date.asc": "Più vecchie",
+				"order.reviews.by.date.desc": "Più recenti",
+				"order.reviews.by.favorite.asc": "Meno popolari",
+				"order.reviews.by.favorite.desc": "Più popolari",
+				"order.reviews.by.rating.asc": "Peggiore valutazione",
+				"order.reviews.by.rating.desc": "Migliore valutazione",
+				"pd.about.cosmetics": "Descrizione del prodotto {name}",
+				"pd.about.perfume": "Descrizione del profumo {name}",
+				"pd.addToCart.quantity": "Quantità",
+				"pd.composition.cosmetics": "Caratteristiche",
+				"pd.composition.perfume": "Composizione",
+				"pd.differentPackaging": "Il prodotto potrebbe avere una confezione diversa da quella mostrata nella foto.",
+				"pd.hideSpecials": "Nascondi i prodotti con sconti speciali",
+				"pd.perfumeSample": "campioncino",
+				"pd.related.articles": "Abbiamo scritto di {name}",
+				"pd.related.articles.more": "Per saperne di più",
+				"pd.showSpecials": "Visualizza i prodotti con sconti speciali",
+				"pd.watchdog.sent.header": "Il tuo indirizzo e-mail è stato salvato.",
+				"pd.watchdog.submit.error": "Durante l'invio del modulo si è verificato un errore.",
+				"pd.watchdog.tryAgain.button": "Riprova",
+				"pd.withoutCellophane": "Il produttore confeziona questo prodotto senza cellophane.",
+				"productItem.add.to.cart": "Aggiungi al carrello",
+				"productItem.in.stock": "pronta consegna",
+				"productItem.in.stock.colors": "diversi colori in pronta consegna",
+				"productItem.in.stock.sizes": "diversi formati in pronta consegna",
+				"productItem.price.from": "da",
+				"productItem.variants": "varianti",
+				"rating.input.name": "Valutazione complessiva",
+				"rating.input.name.error.required": "Selezionare la valutazione",
+				"rating.type.cosmeticQuality": "qualità del cosmetico",
+				"rating.type.designFlakon": "aspetto del flacone",
+				"rating.type.intensity": "intensità",
+				"rating.type.overallImpresion": "impressione generale",
+				"rating.type.persistenceScent": "durata del profumo",
+				"rating.type.simplicityApplication": "facilità di applicazione",
+				"rating.type.totalHappiness": "soddisfazione per il risultato",
+				"reviews.add.review": "Aggiungi una recensione",
+				"reviews.cannot.vote": "Per votare",
+				"reviews.email.label": "E-mail",
+				"reviews.fetch.failed": "impossibile caricare",
+				"reviews.header": "Recensioni {name}",
+				"reviews.hide.parameters.reviews": "Nascondi le valutazioni in base alle caratteristiche",
+				"reviews.input.email": "E-mail",
+				"reviews.input.email.error.failed": "Durante il controllo dell'indirizzo e-mail si è verificato un errore",
+				"reviews.input.email.error.invalid": "Inserire un indirizzo e-mail valido",
+				"reviews.input.email.error.required": "Inserire un indirizzo e-mail",
+				"reviews.input.email.error.taken": "Questo indirizzo e-mail è già stato utilizzato",
+				"reviews.input.name": "Nome",
+				"reviews.input.name.error.required": "Inserire il nome",
+				"reviews.input.text": "La tua recensione",
+				"reviews.input.text.error.required": "Inserire la propria recensione",
+				"reviews.log.in": "accedi",
+				"reviews.name.label": "Nome",
+				"reviews.no.review": "Questo prodotto non ha nessuna valutazione, scrivila tu per primo!",
+				"reviews.parametersReviews": "Valutazione dei parametri",
+				"reviews.retry": "Riprova",
+				"reviews.review.sent": "La tua valutazione è stata salvata correttamente",
+				"reviews.review.text.default": "Non scrivere qui domande o informazioni che non riguardino il prodotto.",
+				"reviews.review.text.label": "La tua recensione",
+				"reviews.reviews": "valutazione",
+				"reviews.send.review": "Invia la valutazione",
+				"reviews.send.review.retry": "Riprova",
+				"reviews.show.next": "Mostra successivi",
+				"reviews.show.parameters.reviews": "Visualizza le valutazioni in base alle caratteristiche",
+				"reviews.vote.error": "La votazione si è conclusa con un errore.",
+				"reviews.write.review": "Scrivi la valutazione",
+				"tnb.notes.retry": "Riprova",
+				"watchdog.input.email": "Inserisci la tua e-mail",
+				"watchdog.input.email.error.failed": "Durante il controllo dell'indirizzo e-mail si è verificato un errore",
+				"watchdog.input.email.error.invalid": "Inserire un indirizzo e-mail valido",
+				"watchdog.input.email.error.required": "Inserire un indirizzo e-mail",
+				"watchdog.input.email.error.taken": "Questo indirizzo e-mail è già stato utilizzato",
+				"tnb.thanks.summary.fragranceSample": "",
+				"tnb.thanks.summary.postage": "",
+				"tnb.thanks.summary.free": "",
+				"tnb.thanks.summary.pcs": "",
+				"global.gdpr.link": "/protezione-dati-personali/",
+				"global.gdpr.link.text": "principi del trattamento dei dati personali",
+				"pd.watchdog.gdpr.info": "Inviando l’e-mail ne accetti il trattamento allo scopo di essere informato sulla disponibilità di un particolare prodotto dalla società Notino Italia s.r.l. fino all’invio dell’e-mail, al massimo per 1 anno. Hai il diritto di revocare il consenso in qualsiasi momento. Ulteriori informazioni sui {link}.",
+				"reviews.gdpr.info": "Aderendo, acconsenti al trattamento dei dati personali ai fini della visualizzazione delle recensioni dei prodotti da parte di Notino, s.r.o. sui propri siti web e social network. Hai il diritto di revocare il tuo consenso. Per ulteriori informazioni, consulta la nostra {link}.",
+				"tnb.gdpr.info.first": "",
+				"tnb.gdpr.link.text": "",
+				"tnb.tac": "",
+				"pd.rc.header": "Scopri di più su {name}",
+				"reviews.usefull.no": "No",
+				"reviews.usefull.yes": "Sì",
+				"reviews.was.it.usefull": "La recensione ti è stata utile?",
+				"universals.add.to.cart": "Aggiungi al carrello",
+				"universals.added.to.cart": "Aggiunto al carrello",
+				"universals.amount.missing.for.free.delivery": "{price} per avere la spedizione gratis",
+				"universals.continue.with.shopping": "Continua lo shopping",
+				"universals.customers.also.buy": "I clienti hanno acquistato anche",
+				"universals.go.to.cart": "Vai al carrello",
+				"universals.services.Engraving.Default": "L'incisione è stata correttamente aggiunta all'articolo.",
+				"universals.services.Engraving.Error": "Durante l'aggiunta dell'incisione all'articolo si è verificato un errore.",
+				"universals.services.Engraving.NotFound": "Durante l'aggiunta dell'incisione all'articolo si è verificato un errore.",
+				"universals.services.Engraving.Success": "L'incisione è stata correttamente aggiunta all'articolo.",
+				"engraving.checkbox.label": "Fa’ incidere un tuo testo per {price}",
+				"engraving.checkbox.label.description": "Fa’ incidere al laser una breve scritta sul prodotto e ottieni così un regalo unico.",
+				"engraving.edit": "modifica",
+				"engraving.enter.max.characters": "Inserisci al massimo {maxChars} lettere",
+				"engraving.illustrative.image": "L’immagine è solo a scopo illustrativo",
+				"engraving.max.order.quantity.description": "Al fine di permettere al maggior numero di clienti di usufruire del servizio, per motivi di produzione al momento non è possibile far incidere più di un prodotto per ogni ordine.",
+				"engraving.max.order.quantity.header": "Si può ordinare solo {quantity} {unit}",
+				"engraving.preview": "La foto del prodotto con il testo inciso è solo a scopo illustrativo.",
+				"engraving.save": "OK",
+				"pd.add.all.to.cart": "Aggiungi tutto al carrello",
+				"pd.added.to.cart": "",
+				"pd.amount.missing.for.free.delivery": "",
+				"pd.continue.with.shopping": "",
+				"pd.customers.also.buy": "",
+				"pd.go.to.cart": "",
+				"product.item.in.stock": "in pronta consegna",
+				"routine.title": "Stanno bene insieme",
+				"universals.add.to.cart.tryAgain": "Riprova",
+				"universals.products.add.Error": "Durante l'aggiunta del prodotto al carrello si è verificato un errore.",
+				"universals.products.add.NoCreateCart": "Impossibile aggiungere l'articolo al carrello.",
+				"universals.products.add.OutOfPriceLimit": "Con l’aggiunta di questo articolo al carrello hai superato il limite consentito per gli ordini.",
+				"universals.products.add.ReducedCount": "La quantità di articoli nel carrello è stata corretta.",
+				"universals.products.add.Sold": "L'articolo è esaurito.",
+				"universals.products.add.UseProductInCart": "Questo articolo con sconto speciale non può più essere aggiunto al carrello.",
+				"universals.products.add.VoucherOnline": "Nel carrello è presente un buono elettronico.",
+				"vp.title": "Stanno bene insieme",
+				"engraving.enter.your.text": "Scrivi il tuo testo",
+				"pd.fixedHeader.articles": "Articoli",
+				"engraving.enter.max.characters.v2": "numero massimo di caratteri: {maxChars}",
+				"pd.freeGiftPackaging": "Confezione regalo gratis",
+				"pd.freeGiftPackagingProductInfo": "",
+				"pd.freeGiftPackagingBrandInfo": "Se compri prodotti {brand} per almeno {price} {currency} ora ricevi una confezione regalo gratis. E’ sufficiente scegliere nel carrello la scatola del colore desiderato. L’offerta è valida fino all’esaurimento delle scorte giornaliere.",
+				"adventcalendar.title": "Calendario dell’Avvento",
+				"adventcalendar.today.title": "L’OFFERTA di oggi",
+				"adventcalendar.footer.title": "Potrai approfittare di offerte su queste marche",
+				"adventcalendar.available.from": "Sveleremo l’offerta il {date}",
+				"adventcalendar.gift.button.soldout": "Siamo spiacenti, ma per oggi il regalo è esaurito.",
+				"adventcalendar.gift.soldout": "Siamo spiacenti, ma per oggi il regalo è esaurito.",
+				"adventcalendar.action.expired": "L’offerta è scaduta, approfitta di quella valida oggi.",
+				"pd.isForProfessionals": "Solo per uso professionale",
+				"wishlist.empty.guide": "Basta cliccare sul simbolo del cuore vicino al tuo prodotto preferito.",
+				"wishlist.not.logged": "<a href={loginUrl}>Accedi</a> e i tuoi prodotti preferiti verranno salvati.",
+				"wishlist.your.products": "Prodotti preferiti",
+				"wishlist.your.products.empty": "Per ora non ci sono <b>prodotti preferiti</b>",
+				"product.item.in.wishlist": "I tuoi preferiti",
+				"product.item.add.to.wishlist": "Aggiungi ai preferiti",
+				"pd.last.visited": "Visti di recente",
+				"attribute.returned": "NON IMBALLATO ",
+				"attribute.damaged": "Imballaggio danneggiato",
+				"pd.productDamaged": "Nuovo prodotto non disimballato con il 100% di contenuto ma con l’imballaggio danneggiato.",
+				"pd.productReturned": "Prodotto non imballato che potrebbe essere leggermente consumato o privo della confezione originale.",
+				"gifts.chooseone": "Scegli il tuo regalo",
+				"gifts.choosemore": "Scegli i tuoi regali",
+				"tnb.campaign.error": "",
+				"tnb.form.accept.news": "",
+				"tnb.form.accept.news.tooltip": "",
+				"tnb.form.accept.news.tooltip.personal.data": "",
+				"tnb.form.address": "",
+				"tnb.form.city": "",
+				"tnb.form.email": "",
+				"tnb.form.email.invalid": "",
+				"tnb.form.name": "",
+				"tnb.form.phone": "",
+				"tnb.form.phone.invalid": "",
+				"tnb.form.required": "",
+				"tnb.form.submit": "",
+				"tnb.form.zip.code": "",
+				"tnb.form.zip.code.invalid": "",
+				"tnb.gdpr.info": "",
+				"tnb.gdpr.personal.data": "",
+				"tnb.gdpr.terms.of.service": "",
+				"tnb.inactive.campaign": "",
+				"tnb.no.items.found": "",
+				"tnb.order.email": "",
+				"tnb.order.info": "",
+				"tnb.order.sent": "",
+				"tnb.order.thank.you": "",
+				"tnb.order.threshold.reached": "",
+				"tnb.order.try.tomorrow": "",
+				"tnb.picker.choose": "",
+				"tnb.form.header": "",
+				"tnb.form.send.order": "",
+				"tnb.form.try.again": "",
+				"pd.youSave": "Risparmia",
+				"delivery.disallowed": "Non consentito",
+				"universals.product.for.professional.choosed": "Hai selezionato un prodotto professionale",
+				"universals.product.for.professional.acknowledgement": "Aggiungendo questo prodotto al carrello, si conferma che questo prodotto è destinato esclusivamente all'uso professionale.",
+				"gifts.chooseone.1": "Seleziona il tuo regalo.",
+				"gifts.choosemore.1": "Seleziona i tuoi regali.",
+				"universals.add.to.cart.limit.exceeded.header": "",
+				"universals.add.to.cart.limit.exceeded.explanation": "",
+				"universals.add.to.cart.limit.exceeded.advice": "",
+				"universals.add.to.cart.soldout.explanation": "Ci dispiace, ma qualcun altro è stato più veloce di te nel comprare il prodotto <b>{productName}</b>. Ti preghiamo di scegliere un prodotto diverso o di provare il nostro sistema <a href=\\\"%URL%\\\">per venire avvertito via e-mail della disponibilità del prodotto.",
+				"universals.add.to.cart.soldout.header": "Prodotto esaurito",
+				"try.it.first": "Campioncino di prova - Try it first",
+				"try.it.first.description": "Ti inviamo un campioncino di prova. Se non ti piace puoi restituirci la confezione grande gratuitamente.",
+				"pd.fixedHeader.richContent": "Scopri di più",
+				"voucher.error.1001": "Il valore dei prodotti non è sufficiente per poter usare il buono.",
+				"voucher.error.1002": "I prodotti selezionati non raggiungono il valore minimo necessario.",
+				"voucher.error.1003": "Non è possibile usare questo buono per l’acquisto di prodotti di nicchia.",
+				"voucher.error.1004": "Il buono è scaduto.",
+				"voucher.error.1005": "Il buono non può venire usato in un altro paese.",
+				"voucher.error.1006": "Il codice è già stato utilizzato.",
+				"voucher.error.1007": "Il buono non è attivo.",
+				"voucher.error.1008": "Il buono non è stato pagato.",
+				"voucher.error.1010": "Il buono è già stato utilizzato.",
+				"voucher.error.1011": "Il buono è stato acquistato.",
+				"voucher.error.1012": "Il buono è oggetto di reclamo.",
+				"voucher.error.1013": "Non ci sono prodotti ai quali sia possibile applicare il buono.",
+				"voucher.error.1014": "Questo buono non è cumulabile con altri buoni.",
+				"voucher.error.1015": "Il buono non è applicabile a un prodotto già scontato.",
+				"voucher.error.1016": "Buono inesistente.",
+				"gifts.chooseone.sample.0": "Scegli un campione gratis",
+				"gifts.chooseone.sample.1": "Seleziona il tuo campione gratis",
+				"gifts.choosemore.sample.0": "Scegli i tuoi campioni gratis",
+				"gifts.choosemore.sample.1": "Seleziona i tuoi campioni gratis",
+				"main.page": "Home page",
+				"parfums.unit.pcs": "pz",
+				"parfums.review.email.newReview": "Nuovo articolo sul prodotto:",
+				"parfums.review.email.reviewText": "Commento:",
+				"parfums.review.email.userName": "Nome utente:",
+				"parfums.review.email.email": "E-mail:",
+				"parfums.review.email.allowReview": "Approva",
+				"parfums.review.email.declineReview": "Rifiutare qui.",
+				"wishlist.linkSharer.toggle": "Condividi il link alla lista",
+				"wishlist.linkSharer.header": "Condividi i tuoi prodotti preferiti",
+				"wishlist.linkSharer.label": "Link da condividere",
+				"wishlist.linkSharer.clipboard": "Copiato negli appunti",
+				"wishlist.linkSharer.clipboardFail": "Copia fallita",
+				"wishlist.shared.addToBasket": "Aggiungi tutto al carrello",
+				"pd.contact.number": "011 1988 7822",
+				"gc.main.page.title": "Buono regalo",
+				"gc.main.page.paragraph": "",
+				"gc.main.page.printedVouchers": "",
+				"gc.payment.failed.title": "Il pagamento non è riuscito",
+				"gc.payment.failed.description": "Non importa, probabilmente si tratta di un piccolo errore. Prova a ripetere l’acquisto. Se il problema persiste, chiama il nostro centro assistenza clienti.",
+				"gc.payment.failed.retry.payment": "Riprova",
+				"gc.vouchers.design": "",
+				"gc.vouchers.value": "",
+				"gc.terms.title": "Condizioni d’uso",
+				"gc.terms.one.order.rule": "Puoi usare il buono solo {oneOrder}. Il suo valore non può essere suddiviso tra più acquisti",
+				"gc.terms.one.order": "per un solo ordine",
+				"gc.terms.one.shopping.rule": "Il beneficiario {oneShopping} e il suo valore verrà scontato dal prezzo del suo acquisto",
+				"gc.terms.one.shopping": "immette il codice del buono nel carrello degli acquisti",
+				"gc.terms.validity.rule": "Buono regalo {validity} a partire dalla data di emissione.",
+				"gc.terms.validity": "valido per un periodo di dodici mesi",
+				"gc.terms.more.vouchers.question": "Hai bisogno di acquistare più buoni?",
+				"gc.terms.more.vouchers.answer": "{question} Chiama il nostro servizio clienti: {callCenterPhone}. Saremo lieti di emettere la quantità di buoni che desideri.",
+				"gc.thankyou.page.title": "L'ordine {orderNumber} è stato inviato. Grazie.",
+				"gc.thankyou.page.subtitle": "La conferma dell’ordine e una copia del buono regalo sono state inviate all’indirizzo e-mail {email}.",
+				"gc.thankyou.page.order.summary": "Riepilogo dell’ordine",
+				"gc.thankyou.page.question.header": "Vuoi cambiare qualcosa nel tuo ordine?",
+				"gc.thankyou.page.question.text": "Se riscontri discrepanze nel tuo ordine o desideri cambiare qualcosa, ti preghiamo di contattarci via e-mail all’indirizzo {email} o di chiamare il numero {phone}.",
+				"gc.thankyou.page.total.cost": "Prezzo totale della merce",
+				"gc.thankyou.page.with.vat": "IVA compresa:",
+				"gc.thankyou.page.payment.info": "Pagamento con carta di credito",
+				"gc.thankyou.page.giftcard.summary.title": "Gift card elettronica",
+				"gc.thankyou.page.download.giftcard": "scarica il buono",
+				"gc.thankyou.page.quantity.unit": "pz",
+				"gc.form.dedication": "Aggiungi una dedica personale",
+				"gc.form.personal.dedication.limit": "Al massimo {limit} caratteri",
+				"gc.form.send.voucher": "Invia il buono regalo ad una persona",
+				"gc.form.email": "E-mail",
+				"gc.form.message": "Messaggio (solo se lo desideri, verrà inviato come testo dell’e-mail)",
+				"gc.form.contact.info": "Informazioni di contatto",
+				"gc.form.name": "Nome",
+				"gc.form.lastName": "Cognome",
+				"gc.form.phoneNumber": "Telefono",
+				"gc.form.is.invoice": "Acquisto per un’azienda, voglio la fattura",
+				"gc.form.company.name": "Azienda",
+				"gc.form.company.street": "Via",
+				"gc.form.company.city": "Città o comune",
+				"gc.form.company.zip": "CAP",
+				"gc.form.company.ico": "Codice fiscale",
+				"gc.form.company.dic": "Partita IVA",
+				"gc.form.gdpr.info": "Dichiaro di essere a conoscenza di {privacyTerms} e {tradeTerms} e voglio spedire l’ordine.",
+				"gc.form.privacy.terms": "Dell’informativa sul trattamento dei dati personali",
+				"gc.form.trade.terms": "delle condizioni di acquisto",
+				"gc.form.order": "Ordina",
+				"gc.form.mail.check": "Forse cercavi {mailHint}?",
+				"gc.form.field.required": "Informazione obbligatoria",
+				"gc.form.email.incorrect.format": "Il formato dell’e-mail è errato",
+				"gc.form.phone.incorrect.format": "Indica un numero di telefono corretto",
+				"try.it.first.about": "Scopri di più su questo servizio",
+				"universals.add.to.cart.only.voucher.header": "Buono virtuale",
+				"universals.add.to.cart.only.voucher.explanation": "Il buono virtuale può venire acquistato solo singolarmente, senza altri prodotti.",
+				"fragrancefinder.header": "",
+				"gc.voucher.title": "Buono regalo",
+				"gc.voucher.info": "per l’acquisto di profumi e di cosmetici nell’e‑shop e nei negozi Notino valido fino a {date}",
+				"gc.voucher.validity.info": "Il codice è valido dodici mesi",
+				"gc.voucher.code.info": "inserisci il codice nel carrello / durante l’acquisto",
+				"fragrancefinder.gender_women": "",
+				"fragrancefinder.gender_men": "",
+				"fragrancefinder.opportunity_daily": "",
+				"fragrancefinder.opportunity_special": "",
+				"fragrancefinder.intensity_decent": "",
+				"fragrancefinder.intensity_medium": "",
+				"fragrancefinder.intensity_intense": "",
+				"fragrancefinder.accords_fruity": "",
+				"fragrancefinder.accords_floral": "",
+				"fragrancefinder.accords_woody": "",
+				"fragrancefinder.accords_spicy": "",
+				"fragrancefinder.accords_water": "",
+				"fragrancefinder.price_under": "",
+				"fragrancefinder.button": "TROVA PER ME",
+				"fragrancefinder.price_over": "",
+				"delivery.checkout.openningHours": "Orario di apertura",
+				"delivery.checkout.hours": "ore",
+				"delivery.checkout.parcelShopInfo": "Altre informazioni sulla filiale",
+				"delivery.checkout.searchPostalCode": "Cerca la città o il CAP...",
+				"delivery.checkout.messageDays": "Il tuo ordine verrà inviato alla filiale prescelta. Verrai informato/a via e-mail o SMS quando sarà possibile ritirare la merce. Per ritirare la merce è sufficiente la password che hai ricevuto via SMS. La merce potrà essere ritirata per 5 giorni.  ",
+				"delivery.checkout.messageFreeDelivery": "Il tuo ordine verrà inviato alla filiale prescelta. Verrai informato/a via e-mail o SMS quando sarà possibile ritirare la merce. Per ritirare la merce di persona è necessario avere il numero d’ordine. In caso di acquisti superiori a %parcel_shop_delivery_price% EUR, non pagherai alcun costo aggiuntivo per la consegna dell’ordine presso il punto vendita.  ",
+				"delivery.checkout.selectParcelShop": "Scegli la filiale",
+				"delivery.checkout.submitSelection": "Conferma la scelta  ",
+				"delivery.checkout.monday": "lunedì",
+				"delivery.checkout.tuesday": "martedì",
+				"delivery.checkout.wednesday": "mercoledì",
+				"delivery.checkout.thursday": "giovedì",
+				"delivery.checkout.friday": "venerdì",
+				"delivery.checkout.saturday": "sabato",
+				"delivery.checkout.sunday": "domenica",
+				"delivery.checkout.today": "Oggi",
+				"delivery.checkout.tomorrow": "Domani",
+				"delivery.checkout.timePopularity": "Affollamento del punto vendita per fascia oraria  ",
+				"delivery.checkout.mondayUpper": "Lunedì",
+				"delivery.checkout.tuesdayUpper": "Martedì",
+				"delivery.checkout.wednesdayUpper": "Mercoledì",
+				"delivery.checkout.thursdayUpper": "Giovedì",
+				"delivery.checkout.friUpper": "Venerdì",
+				"delivery.checkout.saturdayUpper": "Sabato",
+				"delivery.checkout.sundayUpper": "Domenica",
+				"delivery.checkout.address": "Indirizzo",
+				"delivery.checkout.phone": "Telefono",
+				"delivery.checkout.email": "E-mail",
+				"delivery.checkout.services": "Servizi del punto vendita",
+				"delivery.checkout.backToSelection": "Torna alla selezione della filiale  ",
+				"delivery.checkout.personalPickupNotino": "Ritiro di persona nei punti vendita Notino",
+				"delivery.checkout.parcelShopSelect": "Scegli il punto vendita",
+				"delivery.checkout.creditCardPayment": "Pagamento con carta di credito",
+				"delivery.checkout.complaintService": "Servizio reclami",
+				"delivery.checkout.directSale": "Vendita diretta",
+				"delivery.checkout.personalPickUp": "Ritiro di persona",
+				"gc.main.page.subtitle": "Il buono elettronico ti arriverà tramite email immediatamente dopo aver effettuato l'ordine",
+				"gc.description.title": "Perché un buono regalo",
+				"gc.frequent.questions.title": "Domande frequenti",
+				"gc.zip.validation.error": "Il formato del CAP è errato",
+				"gc.form.optional.field": "facoltativo",
+				"gc.form.trade.link": "https://www.notino.it/condizioni-generali-di-vendita/",
+				"gc.form.privacy.link": "https://www.notino.it/protezione-dati-personali/",
+				"delivery.checkout.partnerPickUp": "Punti di raccolta dei partner",
+				"gc.main.image.alt.text": "Modello di buono regalo",
+				"gc.faq.not.answered.question": "Non hai trovato la risposta alla tua domanda?",
+				"gc.faq.not.answered.answer": "Chiamaci o scrivici. Contattaci al nostro numero clienti {phoneNumber} oppure via e-mail {contactEmail}, saremo lieti di aiutarti.",
+				"gc.faq.higher.than.order.answer": "Il buono può essere utilizzato una volta soltanto. Ciò significa che perderai la differenza tra il valore del buono e il valore del tuo ordine. È dunque preferibile scegliere un prodotto in più e utilizzare il buono per l’intero valore.",
+				"gc.last.time.gifts": "Cerchi dei regali all'ultimo minuto? Acquista un buono (voucher) elettronico su Notino!",
+				"gc.gift.card.they.can.choose": "I tuoi cari sceglieranno da soli ciò che li renderà davvero felici.",
+				"gc.gift.card.portfolio": "Abbiamo in pronta consegna oltre 55.000 prodotti di 1.500 marchi: profumi, cosmetici, trucchi, candele profumate ed elettriche. Ciascuno troverà quel che fa al caso suo.",
+				"gc.gift.card.format": "Immediatamente dopo l’ordine, ti invieremo via e-mail un buono elettronico in formato PDF. In un attimo avrai trovato una soluzione per i regali di tutta la famiglia.",
+				"gc.voucher.info.preview": "per l’acquisto di profumi e di cosmetici nell’e‑shop e nei negozi Notino",
+				"gc.form.company.address": "Via e numero",
+				"gc.order.tryAgain": "Riprova",
+				"gc.faq.transport.answer": "Il buono non può essere utilizzato per le spese di spedizione.",
+				"gc.faq.is.voucher.debit.card.question": "È possibile riutilizzare più volte un buono regalo come se fosse una carta ricaricabile?",
+				"gc.faq.other.country.question": "Il buono regalo può essere utilizzato in un altro paese?",
+				"gc.faq.other.country.answer": "No. Può essere utilizzato sono nell’e-shop del paese in cui è stato acquistato. Pertanto, un buono regalo acquistato su notino.it potrà essere utilizzato solo su notino.it.",
+				"gc.load.data.error": "Qualcosa è andato storto. Prova ad aggiornare la pagina.",
+				"gc.load.data.error.reload": "Aggiorna",
+				"gc.select.value.discount": "Sconto {amount}",
+				"gc.faq.transport.question": "Il buono elettronico vale anche per le spese di spedizione?",
+				"gc.faq.higher.than.order.question": "Cosa succede se utilizzo un buono regalo elettronico per un ordine dal valore inferiore rispetto al buono stesso?",
+				"gc.faq.is.voucher.debit.card.answer": "No. Il buono regalo può essere utilizzato solo una volta.",
+				"gc.vouchers.upload.image.passive": "carica una foto",
+				"gc.vouchers.upload.image": "Carica una foto",
+				"gc.vouchers.drop.image": "oppure trascinala qui",
+				"gc.vouchers.perfect.image.tip": "Un consiglio! La foto ideale è nel formato 4:3.",
+				"gc.vouchers.change.image": "carica una nuova foto",
+				"gc.vouchers.upload.new.image": "modifica la foto",
+				"gc.vouchers.change.image.text": "Puoi cambiare le dimensioni della foto spostando le dita. Hai bisogno di{changeImageLabel}?",
+				"gc.vouchers.max.file.size.exceeded": "La tua foto è troppo grande. La dimensione massima è di {maxSize} MB.",
+				"gc.vouchers.no.custom.fil": "Prima dell’ordine, carica una foto nel buono oppure scegli uno dei motivi Notino.",
+				"gc.vouchers.change.image.label": "modifica la foto",
+				"footer.otherLinks.title": "Link importanti",
+				"footer.display.desktop": "Passa alla versione completa",
+				"footer.display.mobile": "Visualizza la versione per cellulare",
+				"footer.contact.info": "Informazioni di contatto",
+				"footer.shops.title": "I nostri negozi e punti di ritiro",
+				"footer.subscribe.title": "Offerte, sconti e novità in anteprima sulla tua e-mail",
+				"footer.subscribe.info": "Inviando i dati personali ne accetti il trattamento allo scopo di offrire ed elaborare offerte di marketing da parte della società Notino Italia s.r.l. Hai il diritto di revocare il consenso in qualsiasi momento. Ulteriori informazioni sui {link}.​",
+				"footer.subscribe.input.placeholder": "Inserisci la tua e-mail",
+				"footer.subscribe.woman": "Donna",
+				"footer.subscribe.man": "Uomo",
+				"footer.whyNotino.title": "Perché scegliere Notino",
+				"footer.subscribe.link": "",
+				"universals.product.for.professional.confirm": "Aggiungi al carrello",
+				"modiface.try.it.on.yourself": "Provalo su di te",
+				"global.tac.link": "",
+				"gc.card.modal.safe.card.payment": "Pagamento sicuro con carta di credito",
+				"gc.card.modal.card.number": "Numero della carta di credito",
+				"gc.card.modal.cardholder.name": "Nome del titolare della carta",
+				"gc.card.modal.valid.thru": "Validità della carta",
+				"gc.card.modal.cvv": "CVV2",
+				"gc.card.modal.pay": "Paga",
+				"gc.card.modal.price.of.goods": "Prezzo della merce",
+				"gc.card.modal.total": "Totale",
+				"gc.card.modal.payment.details.secured": "i tuoi dati di pagamento sono protetti",
+				"gc.card.modal.tooltip.cvv.content": "CVV è un codice numerico a tre cifre situato sul retro della carta di pagamento, a destra della casella della firma.",
+				"gc.card.modal.tooltip.why.header": "A cosa serve?",
+				"gc.card.modal.tooltip.why.content": "Il codice serve per l’autenticazione sicura dell’utente, insieme al numero della carta e alla sua validità.",
+				"modiface.select.appearance": "Scegli",
+				"modiface.webcam.error": "La webcam non è disponibile.",
+				"modiface.generic.error": "Qualcosa è andato storto. Chiudi la finestra e riprova più tardi.",
+				"gc.card.modal.card.number.invalid": "Il numero della carta è incompleto",
+				"gc.card.modal.card.number.incomplete": "numero di carta non valido",
+				"delivery.checkout.closed": "Chiuso",
+				"gc.form.check.field": "Controlla questa informazione",
+				"pd.price.tax.included": "",
+				"gc.form.sign.for.newsletter": "Desidero ricevere le informazioni su novità, offerte e buoni sconto",
+				"gc.form.newsletter.decline": "In relazione a questo ordine non desidero ricevere informazioni su novità, offerte e buoni sconto.",
+				"gc.form.newsletter.tooltip.spam.note": "La società Notino Italia s.r.l. ha il diritto di contattare i propri clienti per finalità di marketing diretto. Per evitare di ricevere posta indesiderata confermi di non essere contrario al trattamento. Ulteriori informazioni sui {personalData}.",
+				"gc.form.newsletter.tooltip": "La società Notino Italia s.r.l. ha il diritto di contattare i propri clienti per finalità di marketing diretto. Nel caso sia contrario al trattamento la preghiamo di specificarlo. Ulteriori informazioni sui {personalData}.",
+				"gc.form.newsletter.tooltip.personal.data": "principi del trattamento dei dati personali",
+				"gc.card.modal.summary.header": "Riepilogo dell’ordine",
+				"nushop.forbidden.product.description": "Ci dispiace che tu non abbia trovato quello che stavi cercando. Siamo però sicuri che nel nostro vasto assortimento di prodotti troverai quello che fa al caso tuo.",
+				"menu.menu": "Menu",
+				"menu.showAll": "scopri di più",
+				"modiface.please.wait": "Attendere prego …",
+				"modiface.allow.webcam": "Innanzitutto, consenti l'accesso alla videocamera.",
+				"tnb.input.phone.error.taken": ""
+			}
+		},
+		"__typename": "LanguagedMessage"
+	},
+	"PathView:/chloe/chloe-eau-de-parfum-per-donna/": {
+		"__typename": "PathView",
+		"id": "f39acaa4694a3982d6535b51d05d99b3",
+		"path": "/chloe/chloe-eau-de-parfum-per-donna/",
+		"type": "ProductDetailSimple",
+		"productId": 67469
+	},
+	"Product:67469": {
+		"id": "67469",
+		"brand": "Chloé",
+		"brandId": 189,
+		"brandInfo": {
+			"type": "id",
+			"generated": false,
+			"id": "Brand:189",
+			"typename": "Brand"
+		},
+		"breadcrumb": [
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.breadcrumb.0",
+				"typename": "Breadcrumb"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.breadcrumb.1",
+				"typename": "Breadcrumb"
+			}
+		],
+		"url": "/chloe/chloe-eau-de-parfum-per-donna/",
+		"collection": "Chloé",
+		"annotation": "eau de parfum da donna",
+		"subName": "",
+		"code": "CHLCHLW_AEDP10",
+		"categoryPath": "Parfémy > parfémovaná voda",
+		"kind": "Parfémy",
+		"category": {
+			"type": "json",
+			"json": [
+				"Parfémy",
+				"Parfémy"
+			]
+		},
+		"subCategory": {
+			"type": "json",
+			"json": [
+				"Dámské parfémy"
+			]
+		},
+		"type": {
+			"type": "json",
+			"json": [
+				"parfémovaná voda",
+				"Parfémované vody"
+			]
+		},
+		"marketType": "luxury",
+		"manufacturer": "COTY Prestige",
+		"config": {
+			"type": "id",
+			"generated": true,
+			"id": "$Product:67469.config",
+			"typename": "ProductConfig"
+		},
+		"description": "\r    <p>L’eau de parfum da donna Chloé Chloé è piena di spontaneità, giocosità e sensualità. Esprime il senso per lo stile delle donne perfette che amano la moda, l’eleganza e la creatività.</p>\r    <ul>\r      <li><a href=\"https://www.notino.it/profumi/\" title=\"profumo\">profumo</a> floreale e cipriato</li>\r      <li>per la donna romantica</li>\r      <li>indicato per essere utilizzato tutti i giorni e per le occasioni speciali</li>\r    </ul>\r    <p><strong>Composizione del profumo</strong><br />La nota iniziale ariosa dell'eau de parfum è composta da una combinazione di litchi dolce, peonie inebrianti e fresie aromatiche. Successivamente, si manifesta il cuore puramente floreale del profumo, che unisce le note sensuali della rosa, del mughetto e della magnolia. La coda della composizione profumata unisce accordi di ambra e dell’elegante legno di cedro.</p>\r    <p><strong>Storia del profumo</strong><br />L’aspetto del flacone di lusso della fragranza riflette lo spirito puramente elegante del marchio di moda francese Chloé: il vetro è delicatamente pieghettato e il collo del flacone è decorato con un fiocco di colore rosa legato a mano. Questo profumo rende felici le donne di tutto il mondo dal 2008. </p>",
+		"unit": "ml",
+		"unitAmount": null,
+		"orderUnit": "pz",
+		"rating": null,
+		"variants": [
+			{
+				"type": "id",
+				"generated": false,
+				"id": "Variant:67469",
+				"typename": "Variant"
+			},
+			{
+				"type": "id",
+				"generated": false,
+				"id": "Variant:67484",
+				"typename": "Variant"
+			},
+			{
+				"type": "id",
+				"generated": false,
+				"id": "Variant:69066",
+				"typename": "Variant"
+			},
+			{
+				"type": "id",
+				"generated": false,
+				"id": "Variant:16010294",
+				"typename": "Variant"
+			}
+		],
+		"campaigns": [
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.campaigns.0",
+				"typename": "Campaign"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.campaigns.1",
+				"typename": "Campaign"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.campaigns.2",
+				"typename": "Campaign"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.campaigns.3",
+				"typename": "Campaign"
+			}
+		],
+		"related": [
+			{
+				"type": "id",
+				"generated": false,
+				"id": "Product:15962523",
+				"typename": "Product"
+			},
+			{
+				"type": "id",
+				"generated": false,
+				"id": "Product:659407",
+				"typename": "Product"
+			},
+			{
+				"type": "id",
+				"generated": false,
+				"id": "Product:16014210",
+				"typename": "Product"
+			},
+			{
+				"type": "id",
+				"generated": false,
+				"id": "Product:67485",
+				"typename": "Product"
+			},
+			{
+				"type": "id",
+				"generated": false,
+				"id": "Product:620670",
+				"typename": "Product"
+			},
+			{
+				"type": "id",
+				"generated": false,
+				"id": "Product:67486",
+				"typename": "Product"
+			},
+			{
+				"type": "id",
+				"generated": false,
+				"id": "Product:67487",
+				"typename": "Product"
+			},
+			{
+				"type": "id",
+				"generated": false,
+				"id": "Product:16019458",
+				"typename": "Product"
+			},
+			{
+				"type": "id",
+				"generated": false,
+				"id": "Product:16019352",
+				"typename": "Product"
+			}
+		],
+		"deliveries": [
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.deliveries.0",
+				"typename": "Delivery"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.deliveries.1",
+				"typename": "Delivery"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.deliveries.2",
+				"typename": "Delivery"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.deliveries.3",
+				"typename": "Delivery"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.deliveries.4",
+				"typename": "Delivery"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.deliveries.5",
+				"typename": "Delivery"
+			}
+		],
+		"hasDifferentSizes": true,
+		"hasDifferentColors": false,
+		"isPerfume": true,
+		"isForbiddenToDisplay": false,
+		"variantDisplayType": "Default",
+		"characteristics": [
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.characteristics.0",
+				"typename": "Characteristic"
+			}
+		],
+		"composition": [
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.composition.0",
+				"typename": "Characteristic"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.composition.1",
+				"typename": "Characteristic"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.composition.2",
+				"typename": "Characteristic"
+			}
+		],
+		"relatedArticles": [
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.relatedArticles.0",
+				"typename": "Article"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.relatedArticles.1",
+				"typename": "Article"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.relatedArticles.2",
+				"typename": "Article"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "Product:67469.relatedArticles.3",
+				"typename": "Article"
+			}
+		],
+		"__typename": "Product",
+		"reviewSummary": {
+			"type": "id",
+			"generated": true,
+			"id": "$Product:67469.reviewSummary",
+			"typename": "ReviewSummary"
+		}
+	},
+	"Brand:189": {
+		"id": "189",
+		"name": "Chloé",
+		"description": "\r\n    <p>Libertà, leggerezza e femminilità: questi sono i principi che Chloé applica sin dalla sua fondazione. La storia di Chloé ha avuto inizio a Parigi nel 1952, quando Gabrielle Aghion e Jacques Lenoir lanciarono sul mercato una propria collezione di moda. Erano tra i pionieri di un modo meno rigido di concepire i dettami dell'alta moda, presentando ai clienti una linea più confortevole e comprensibile: il prêt-à-porter.</p>\r\n    <p>Nel 1975, la casa di moda ha realizzato il primo profumo, una fragranza che evoca l'animo romantico di ogni donna. Chloé è uno dei pochi marchi che si concentra esclusivamente su fragranze femminili. Il mondo Chloé è praticamente dominato dalle donne sicure di sé, spensierate, romantiche e sognatrici.</p>\r\n    <p>Con l'introduzione sul mercato dell'eau de parfum Chloé Chloé, che rispetta rigorosamente la femminilità, la tenerezza e la seduzione, il marchio è entrato definitivamente nella storia dei profumi. I caratteristici profumi floreali e legnosi di Chloé sono diventati vere e proprie icone e sono amati dalle donne di tutto il mondo.</p>",
+		"__typename": "Brand"
+	},
+	"Product:67469.breadcrumb.0": {
+		"name": "Marche",
+		"link": "/marche-cosmetici/",
+		"__typename": "Breadcrumb"
+	},
+	"Product:67469.breadcrumb.1": {
+		"name": "Chloé",
+		"link": "/chloe/",
+		"__typename": "Breadcrumb"
+	},
+	"$Product:67469.config": {
+		"showAddToCartButton": true,
+		"showAddToCartModal": true,
+		"__typename": "ProductConfig"
+	},
+	"Variant:67469": {
+		"id": "67469",
+		"name": "Chloé",
+		"annotation": "",
+		"orderCode": "CHL0019",
+		"productCode": "CHLCHLW_AEDP10",
+		"type": "EDP",
+		"gender": "W",
+		"attributes": {
+			"type": "json",
+			"json": {
+				"Action": true,
+				"Master": true,
+				"PackageSize": {
+					"height": 70,
+					"width": 123,
+					"depth": 115
+				},
+				"FreeDelivery": true
+			}
+		},
+		"engraving": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:67469.engraving",
+			"typename": "Engraving"
+		},
+		"parameters": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:67469.parameters",
+			"typename": "Parameters"
+		},
+		"price": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:67469.price",
+			"typename": "Price"
+		},
+		"unitPrice": null,
+		"canBuy": true,
+		"nextDeliveryDate": "1900-01-01T00:00:00Z",
+		"stockAvailability": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:67469.stockAvailability",
+			"typename": "StockInfo"
+		},
+		"url": "/chloe/chloe-eau-de-parfum-per-donna/p-67469/",
+		"imagesByCategory": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:67469.imagesByCategory",
+			"typename": "ImagesByCategory"
+		},
+		"videos": {
+			"type": "json",
+			"json": [
+				"NWrfv2WpXsc"
+			]
+		},
+		"maxOrderQty": 3,
+		"showWatchdog": false,
+		"originalPrice": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:67469.originalPrice",
+			"typename": "Price"
+		},
+		"additionalInfo": "75 ml",
+		"additionalText": "",
+		"variantName": "eau de parfum da donna",
+		"color": "FFFFFF",
+		"colors": {
+			"type": "json",
+			"json": []
+		},
+		"wishlisted": false,
+		"campaignConfig": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:67469.campaignConfig",
+			"typename": "CampaignConfig"
+		},
+		"modifaceEffects": [],
+		"__typename": "Variant"
+	},
+	"$Variant:67469.engraving": {
+		"allowed": false,
+		"characterCount": 0,
+		"image": null,
+		"config": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:67469.engraving.config",
+			"typename": "EngravingConfig"
+		},
+		"__typename": "Engraving"
+	},
+	"$Variant:67469.engraving.config": {
+		"isAvailable": false,
+		"price": null,
+		"__typename": "EngravingConfig"
+	},
+	"$Variant:67469.parameters": {
+		"amount": 75,
+		"package": "75",
+		"__typename": "Parameters"
+	},
+	"$Variant:67469.price": {
+		"value": 53,
+		"currency": "EUR",
+		"tax": 22,
+		"__typename": "Price"
+	},
+	"$Variant:67469.stockAvailability": {
+		"code": "moreThan20",
+		"count": null,
+		"__typename": "StockInfo"
+	},
+	"$Variant:67469.imagesByCategory.mainImage": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/chlchlw_aedp10_02-o/chloe-chloe-eau-de-parfum-da-donna___32.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:67469.imagesByCategory": {
+		"mainImage": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:67469.imagesByCategory.mainImage",
+			"typename": "Image"
+		},
+		"previewImage": null,
+		"shadeImage": null,
+		"others": [
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:67469.imagesByCategory.others.0",
+				"typename": "Image"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:67469.imagesByCategory.others.1",
+				"typename": "Image"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:67469.imagesByCategory.others.2",
+				"typename": "Image"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:67469.imagesByCategory.others.3",
+				"typename": "Image"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:67469.imagesByCategory.others.4",
+				"typename": "Image"
+			}
+		],
+		"__typename": "ImagesByCategory"
+	},
+	"$Variant:67469.imagesByCategory.others.0": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/chlchlw_aedp10_01-o/chloe-chloe-eau-de-parfum-da-donna___32.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:67469.imagesByCategory.others.1": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/688575201895_02/chloe-chloe-eau-de-parfum-da-donna___32.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:67469.imagesByCategory.others.2": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/688575201895_03/chloe-chloe-eau-de-parfum-da-donna___32.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:67469.imagesByCategory.others.3": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/688575201895_04/chloe-chloe-eau-de-parfum-da-donna___32.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:67469.imagesByCategory.others.4": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/688575201895_05/chloe-chloe-eau-de-parfum-da-donna___32.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:67469.originalPrice": {
+		"value": 99,
+		"currency": "EUR",
+		"tax": 22,
+		"__typename": "Price"
+	},
+	"$Variant:67469.campaignConfig": {
+		"allowed": "None",
+		"price": null,
+		"groupName": null,
+		"__typename": "CampaignConfig"
+	},
+	"Variant:67484": {
+		"id": "67484",
+		"name": "Chloé",
+		"annotation": "",
+		"orderCode": "CHL0020",
+		"productCode": "CHLCHLW_AEDP20",
+		"type": "EDP",
+		"gender": "W",
+		"attributes": {
+			"type": "json",
+			"json": {
+				"PackageSize": {
+					"height": 71,
+					"width": 110,
+					"depth": 98
+				},
+				"FreeDelivery": true
+			}
+		},
+		"engraving": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:67484.engraving",
+			"typename": "Engraving"
+		},
+		"parameters": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:67484.parameters",
+			"typename": "Parameters"
+		},
+		"price": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:67484.price",
+			"typename": "Price"
+		},
+		"unitPrice": null,
+		"canBuy": true,
+		"nextDeliveryDate": "1900-01-01T00:00:00Z",
+		"stockAvailability": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:67484.stockAvailability",
+			"typename": "StockInfo"
+		},
+		"url": "/chloe/chloe-eau-de-parfum-per-donna/p-67484/",
+		"imagesByCategory": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:67484.imagesByCategory",
+			"typename": "ImagesByCategory"
+		},
+		"videos": {
+			"type": "json",
+			"json": [
+				"NWrfv2WpXsc"
+			]
+		},
+		"maxOrderQty": 3,
+		"showWatchdog": false,
+		"originalPrice": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:67484.originalPrice",
+			"typename": "Price"
+		},
+		"additionalInfo": "50 ml",
+		"additionalText": "",
+		"variantName": "eau de parfum da donna",
+		"color": "FFFFFF",
+		"colors": {
+			"type": "json",
+			"json": []
+		},
+		"wishlisted": false,
+		"campaignConfig": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:67484.campaignConfig",
+			"typename": "CampaignConfig"
+		},
+		"modifaceEffects": [],
+		"__typename": "Variant"
+	},
+	"$Variant:67484.engraving": {
+		"allowed": false,
+		"characterCount": 0,
+		"image": null,
+		"config": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:67484.engraving.config",
+			"typename": "EngravingConfig"
+		},
+		"__typename": "Engraving"
+	},
+	"$Variant:67484.engraving.config": {
+		"isAvailable": false,
+		"price": null,
+		"__typename": "EngravingConfig"
+	},
+	"$Variant:67484.parameters": {
+		"amount": 50,
+		"package": "50",
+		"__typename": "Parameters"
+	},
+	"$Variant:67484.price": {
+		"value": 55,
+		"currency": "EUR",
+		"tax": 22,
+		"__typename": "Price"
+	},
+	"$Variant:67484.stockAvailability": {
+		"code": "moreThan20",
+		"count": null,
+		"__typename": "StockInfo"
+	},
+	"$Variant:67484.imagesByCategory.mainImage": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/chlchlw_aedp20_02-o/chloe-chloe-eau-de-parfum-da-donna___30.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:67484.imagesByCategory": {
+		"mainImage": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:67484.imagesByCategory.mainImage",
+			"typename": "Image"
+		},
+		"previewImage": null,
+		"shadeImage": null,
+		"others": [
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:67484.imagesByCategory.others.0",
+				"typename": "Image"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:67484.imagesByCategory.others.1",
+				"typename": "Image"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:67484.imagesByCategory.others.2",
+				"typename": "Image"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:67484.imagesByCategory.others.3",
+				"typename": "Image"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:67484.imagesByCategory.others.4",
+				"typename": "Image"
+			}
+		],
+		"__typename": "ImagesByCategory"
+	},
+	"$Variant:67484.imagesByCategory.others.0": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/chlchlw_aedp20_01-o/chloe-chloe-eau-de-parfum-da-donna___30.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:67484.imagesByCategory.others.1": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/3607346232347_02/chloe-chloe-eau-de-parfum-da-donna___30.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:67484.imagesByCategory.others.2": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/3607346232347_03/chloe-chloe-eau-de-parfum-da-donna___30.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:67484.imagesByCategory.others.3": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/3607346232347_04/chloe-chloe-eau-de-parfum-da-donna___30.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:67484.imagesByCategory.others.4": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/3607346232347_05/chloe-chloe-eau-de-parfum-da-donna___30.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:67484.originalPrice": {
+		"value": 82,
+		"currency": "EUR",
+		"tax": 22,
+		"__typename": "Price"
+	},
+	"$Variant:67484.campaignConfig": {
+		"allowed": "None",
+		"price": null,
+		"groupName": null,
+		"__typename": "CampaignConfig"
+	},
+	"Variant:69066": {
+		"id": "69066",
+		"name": "Chloé",
+		"annotation": "",
+		"orderCode": "CHL0021",
+		"productCode": "CHLCHLW_AEDP30",
+		"type": "EDP",
+		"gender": "W",
+		"attributes": {
+			"type": "json",
+			"json": {
+				"PackageSize": {
+					"height": 70,
+					"width": 102,
+					"depth": 90
+				}
+			}
+		},
+		"engraving": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:69066.engraving",
+			"typename": "Engraving"
+		},
+		"parameters": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:69066.parameters",
+			"typename": "Parameters"
+		},
+		"price": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:69066.price",
+			"typename": "Price"
+		},
+		"unitPrice": null,
+		"canBuy": true,
+		"nextDeliveryDate": "1900-01-01T00:00:00Z",
+		"stockAvailability": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:69066.stockAvailability",
+			"typename": "StockInfo"
+		},
+		"url": "/chloe/chloe-eau-de-parfum-per-donna/p-69066/",
+		"imagesByCategory": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:69066.imagesByCategory",
+			"typename": "ImagesByCategory"
+		},
+		"videos": {
+			"type": "json",
+			"json": [
+				"NWrfv2WpXsc"
+			]
+		},
+		"maxOrderQty": 3,
+		"showWatchdog": false,
+		"originalPrice": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:69066.originalPrice",
+			"typename": "Price"
+		},
+		"additionalInfo": "30 ml",
+		"additionalText": "",
+		"variantName": "eau de parfum da donna",
+		"color": "FFFFFF",
+		"colors": {
+			"type": "json",
+			"json": []
+		},
+		"wishlisted": false,
+		"campaignConfig": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:69066.campaignConfig",
+			"typename": "CampaignConfig"
+		},
+		"modifaceEffects": [],
+		"__typename": "Variant"
+	},
+	"$Variant:69066.engraving": {
+		"allowed": false,
+		"characterCount": 0,
+		"image": null,
+		"config": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:69066.engraving.config",
+			"typename": "EngravingConfig"
+		},
+		"__typename": "Engraving"
+	},
+	"$Variant:69066.engraving.config": {
+		"isAvailable": false,
+		"price": null,
+		"__typename": "EngravingConfig"
+	},
+	"$Variant:69066.parameters": {
+		"amount": 30,
+		"package": "30",
+		"__typename": "Parameters"
+	},
+	"$Variant:69066.price": {
+		"value": 35.3,
+		"currency": "EUR",
+		"tax": 22,
+		"__typename": "Price"
+	},
+	"$Variant:69066.stockAvailability": {
+		"code": "moreThan20",
+		"count": null,
+		"__typename": "StockInfo"
+	},
+	"$Variant:69066.imagesByCategory.mainImage": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/chlchlw_aedp30_02-o/chloe-chloe-eau-de-parfum-da-donna___30.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:69066.imagesByCategory": {
+		"mainImage": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:69066.imagesByCategory.mainImage",
+			"typename": "Image"
+		},
+		"previewImage": null,
+		"shadeImage": null,
+		"others": [
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:69066.imagesByCategory.others.0",
+				"typename": "Image"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:69066.imagesByCategory.others.1",
+				"typename": "Image"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:69066.imagesByCategory.others.2",
+				"typename": "Image"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:69066.imagesByCategory.others.3",
+				"typename": "Image"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:69066.imagesByCategory.others.4",
+				"typename": "Image"
+			}
+		],
+		"__typename": "ImagesByCategory"
+	},
+	"$Variant:69066.imagesByCategory.others.0": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/chlchlw_aedp30_01-o/chloe-chloe-eau-de-parfum-da-donna___30.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:69066.imagesByCategory.others.1": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/688575201901_02/chloe-chloe-eau-de-parfum-da-donna___30.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:69066.imagesByCategory.others.2": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/688575201901_03/chloe-chloe-eau-de-parfum-da-donna___30.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:69066.imagesByCategory.others.3": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/688575201901_04/chloe-chloe-eau-de-parfum-da-donna___30.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:69066.imagesByCategory.others.4": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/688575201901_05/chloe-chloe-eau-de-parfum-da-donna___30.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:69066.originalPrice": {
+		"value": 58,
+		"currency": "EUR",
+		"tax": 22,
+		"__typename": "Price"
+	},
+	"$Variant:69066.campaignConfig": {
+		"allowed": "None",
+		"price": null,
+		"groupName": null,
+		"__typename": "CampaignConfig"
+	},
+	"Variant:16010294": {
+		"id": "16010294",
+		"name": "Chloé",
+		"annotation": "",
+		"orderCode": "CHL03666",
+		"productCode": "CHLCHLW_AEDP31",
+		"type": "EDP",
+		"gender": "W",
+		"attributes": {
+			"type": "json",
+			"json": {
+				"AirTransportDisallowed": true,
+				"PackageSize": {
+					"height": 92,
+					"width": 73,
+					"depth": 37
+				}
+			}
+		},
+		"engraving": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:16010294.engraving",
+			"typename": "Engraving"
+		},
+		"parameters": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:16010294.parameters",
+			"typename": "Parameters"
+		},
+		"price": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:16010294.price",
+			"typename": "Price"
+		},
+		"unitPrice": null,
+		"canBuy": true,
+		"nextDeliveryDate": "1900-01-01T00:00:00Z",
+		"stockAvailability": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:16010294.stockAvailability",
+			"typename": "StockInfo"
+		},
+		"url": "/chloe/chloe-eau-de-parfum-per-donna/p-16010294/",
+		"imagesByCategory": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:16010294.imagesByCategory",
+			"typename": "ImagesByCategory"
+		},
+		"videos": {
+			"type": "json",
+			"json": [
+				"NWrfv2WpXsc"
+			]
+		},
+		"maxOrderQty": 3,
+		"showWatchdog": false,
+		"originalPrice": null,
+		"additionalInfo": "20 ml",
+		"additionalText": "",
+		"variantName": "eau de parfum da donna",
+		"color": "FFFFFF",
+		"colors": {
+			"type": "json",
+			"json": []
+		},
+		"wishlisted": false,
+		"campaignConfig": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:16010294.campaignConfig",
+			"typename": "CampaignConfig"
+		},
+		"modifaceEffects": [],
+		"__typename": "Variant"
+	},
+	"$Variant:16010294.engraving": {
+		"allowed": false,
+		"characterCount": 0,
+		"image": null,
+		"config": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:16010294.engraving.config",
+			"typename": "EngravingConfig"
+		},
+		"__typename": "Engraving"
+	},
+	"$Variant:16010294.engraving.config": {
+		"isAvailable": false,
+		"price": null,
+		"__typename": "EngravingConfig"
+	},
+	"$Variant:16010294.parameters": {
+		"amount": 20,
+		"package": "20",
+		"__typename": "Parameters"
+	},
+	"$Variant:16010294.price": {
+		"value": 20.5,
+		"currency": "EUR",
+		"tax": 22,
+		"__typename": "Price"
+	},
+	"$Variant:16010294.stockAvailability": {
+		"code": "moreThan20",
+		"count": null,
+		"__typename": "StockInfo"
+	},
+	"$Variant:16010294.imagesByCategory.mainImage": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/3614229147261_01-o/chloe-chloe-eau-de-parfum-da-donna_.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:16010294.imagesByCategory": {
+		"mainImage": {
+			"type": "id",
+			"generated": true,
+			"id": "$Variant:16010294.imagesByCategory.mainImage",
+			"typename": "Image"
+		},
+		"previewImage": null,
+		"shadeImage": null,
+		"others": [
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:16010294.imagesByCategory.others.0",
+				"typename": "Image"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:16010294.imagesByCategory.others.1",
+				"typename": "Image"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:16010294.imagesByCategory.others.2",
+				"typename": "Image"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:16010294.imagesByCategory.others.3",
+				"typename": "Image"
+			},
+			{
+				"type": "id",
+				"generated": true,
+				"id": "$Variant:16010294.imagesByCategory.others.4",
+				"typename": "Image"
+			}
+		],
+		"__typename": "ImagesByCategory"
+	},
+	"$Variant:16010294.imagesByCategory.others.0": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/3614229147261_02-o/chloe-chloe-eau-de-parfum-da-donna_.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:16010294.imagesByCategory.others.1": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/3614229147261_03/chloe-chloe-eau-de-parfum-da-donna_.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:16010294.imagesByCategory.others.2": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/3614229147261_04/chloe-chloe-eau-de-parfum-da-donna_.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:16010294.imagesByCategory.others.3": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/3614229147261_05/chloe-chloe-eau-de-parfum-da-donna_.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:16010294.imagesByCategory.others.4": {
+		"alt": "Chloé Chloé eau de parfum da donna",
+		"src": "chloe/3614229147261_06/chloe-chloe-eau-de-parfum-da-donna_.jpg",
+		"__typename": "Image"
+	},
+	"$Variant:16010294.campaignConfig": {
+		"allowed": "None",
+		"price": null,
+		"groupName": null,
+		"__typename": "CampaignConfig"
+	},
+	"Product:67469.campaigns.0": {
+		"campaignId": "16033570",
+		"name": null,
+		"imageUrl": null,
+		"text": "Acquista prodotti Chloé a partire da 50 € e ricevi gratuitamente un elegante bloc-notes Chloé Nomade.",
+		"detailPageText": null,
+		"displayOnDetailPage": true,
+		"giftImageUrl": "chloe/3614227846111_01-o.jpg",
+		"giftType": "SPECIAL",
+		"productId": "67469",
+		"__typename": "Campaign"
+	},
+	"Product:67469.campaigns.1": {
+		"campaignId": "16033570",
+		"name": null,
+		"imageUrl": null,
+		"text": "Acquista prodotti Chloé a partire da 50 € e ricevi gratuitamente un elegante bloc-notes Chloé Nomade.",
+		"detailPageText": null,
+		"displayOnDetailPage": true,
+		"giftImageUrl": "chloe/3614227846111_01-o.jpg",
+		"giftType": "SPECIAL",
+		"productId": "67484",
+		"__typename": "Campaign"
+	},
+	"Product:67469.campaigns.2": {
+		"campaignId": "16033570",
+		"name": null,
+		"imageUrl": null,
+		"text": "Acquista prodotti Chloé a partire da 50 € e ricevi gratuitamente un elegante bloc-notes Chloé Nomade.",
+		"detailPageText": null,
+		"displayOnDetailPage": true,
+		"giftImageUrl": "chloe/3614227846111_01-o.jpg",
+		"giftType": "SPECIAL",
+		"productId": "69066",
+		"__typename": "Campaign"
+	},
+	"Product:67469.campaigns.3": {
+		"campaignId": "16033570",
+		"name": null,
+		"imageUrl": null,
+		"text": "Acquista prodotti Chloé a partire da 50 € e ricevi gratuitamente un elegante bloc-notes Chloé Nomade.",
+		"detailPageText": null,
+		"displayOnDetailPage": true,
+		"giftImageUrl": "chloe/3614227846111_01-o.jpg",
+		"giftType": "SPECIAL",
+		"productId": "16010294",
+		"__typename": "Campaign"
+	},
+	"Product:15962523": {
+		"id": "15962523",
+		"__typename": "Product"
+	},
+	"Product:659407": {
+		"id": "659407",
+		"__typename": "Product"
+	},
+	"Product:16014210": {
+		"id": "16014210",
+		"__typename": "Product"
+	},
+	"Product:67485": {
+		"id": "67485",
+		"__typename": "Product"
+	},
+	"Product:620670": {
+		"id": "620670",
+		"__typename": "Product"
+	},
+	"Product:67486": {
+		"id": "67486",
+		"__typename": "Product"
+	},
+	"Product:67487": {
+		"id": "67487",
+		"__typename": "Product"
+	},
+	"Product:16019458": {
+		"id": "16019458",
+		"__typename": "Product"
+	},
+	"Product:16019352": {
+		"id": "16019352",
+		"__typename": "Product"
+	},
+	"Product:67469.deliveries.0": {
+		"name": "BRT Terraferma",
+		"date": "2020-07-27T14:36:30.9125238+02:00",
+		"isPersonal": false,
+		"isAirTransport": false,
+		"disallowedReason": null,
+		"__typename": "Delivery"
+	},
+	"Product:67469.deliveries.1": {
+		"name": " BRT Calabria e isole",
+		"date": "2020-07-28T14:36:30.9125238+02:00",
+		"isPersonal": false,
+		"isAirTransport": false,
+		"disallowedReason": null,
+		"__typename": "Delivery"
+	},
+	"Product:67469.deliveries.2": {
+		"name": "GLS Terraferma",
+		"date": "2020-07-27T14:36:30.9125238+02:00",
+		"isPersonal": false,
+		"isAirTransport": false,
+		"disallowedReason": null,
+		"__typename": "Delivery"
+	},
+	"Product:67469.deliveries.3": {
+		"name": "GLS Calabria e isole",
+		"date": "2020-07-28T14:36:30.9125238+02:00",
+		"isPersonal": false,
+		"isAirTransport": false,
+		"disallowedReason": null,
+		"__typename": "Delivery"
+	},
+	"Product:67469.deliveries.4": {
+		"name": "UPS Air Mail (Bologna,Milan,Roma,Udine,Venice)",
+		"date": "2020-07-24T14:36:30.9125238+02:00",
+		"isPersonal": false,
+		"isAirTransport": true,
+		"disallowedReason": null,
+		"__typename": "Delivery"
+	},
+	"Product:67469.deliveries.5": {
+		"name": "UPS Air Mail altre città",
+		"date": "2020-07-28T14:36:30.9125238+02:00",
+		"isPersonal": false,
+		"isAirTransport": true,
+		"disallowedReason": null,
+		"__typename": "Delivery"
+	},
+	"Product:67469.characteristics.0": {
+		"name": "Tipo di profumo",
+		"help": null,
+		"link": null,
+		"values": {
+			"type": "json",
+			"json": [
+				"fragranze orientali",
+				"profumi fioriti\t"
+			]
+		},
+		"__typename": "Characteristic"
+	},
+	"Product:67469.composition.0": {
+		"name": "Testa",
+		"help": "Note di testa: si sviluppano subito dopo l'applicazione. Suscitano la prima impressione e di solito sono molto intense, svaniscono rapidamente.",
+		"link": null,
+		"values": {
+			"type": "json",
+			"json": [
+				"litchi",
+				"freesia",
+				"peonia"
+			]
+		},
+		"__typename": "Characteristic"
+	},
+	"Product:67469.composition.1": {
+		"name": "Cuore",
+		"help": "Note di cuore: si sviluppano di solito dopo pochi minuti, dopo che sono svanite le note di testa. Normalmente persistono per 2-3 ore.",
+		"link": null,
+		"values": {
+			"type": "json",
+			"json": [
+				"magnolia",
+				"mughetto",
+				"rosa"
+			]
+		},
+		"__typename": "Characteristic"
+	},
+	"Product:67469.composition.2": {
+		"name": "Fondo",
+		"help": "Note di fondo: è l'ultima e la più lunga fase del profumo. Persistono per circa 4 ore, a volte per l'intera giornata.",
+		"link": null,
+		"values": {
+			"type": "json",
+			"json": [
+				"cedro della Virginia",
+				"ambra"
+			]
+		},
+		"__typename": "Characteristic"
+	},
+	"Product:67469.relatedArticles.0": {
+		"title": "CONSIGLI PER IL NATALE: regalare un profumo? Perché no?",
+		"url": "https://www.notino.it/articoli/consigli-per-il-natale-un-profumo-sotto-lalbero-perche-no/",
+		"description": "Cerchi un regalo universale con cui fare sempre centro? I profumi fanno felici tutti, specialmente sotto l’albero di Natale. Ecco alcuni suggerimenti.",
+		"image": "https://cdn.notinoimg.com/images/gallery/profumi_uomo_natale_notino_it_450x300.jpg",
+		"date": "2018-12-03T15:04:07Z",
+		"author": "notino.it",
+		"__typename": "Article"
+	},
+	"Product:67469.relatedArticles.1": {
+		"title": "I migliori profumi da donna: La top 10 dei profumi da donna",
+		"url": "https://www.notino.it/articoli/i-migliori-profumi-da-donna-la-top-10-dei-profumi-da-donna/",
+		"description": "Migliaia di profumi, migliaia di fragranze diverse. Abbiamo selezionato i profumi da donna più popolari con i quali farai sicuramente centro.",
+		"image": "https://cdn.notinoimg.com/images/gallery/top_10_profumi_da_donna.jpg",
+		"date": "2017-10-30T16:53:30Z",
+		"author": "notino.it",
+		"__typename": "Article"
+	},
+	"Product:67469.relatedArticles.2": {
+		"title": "I profumi autunnali più belli da provare assolutamente",
+		"url": "https://www.notino.it/articoli/i-profumi-autunnali-piu-belli-da-provare-assolutamente/",
+		"description": "L'autunno è la stagione ideale per testare i profumi. Nelle giornate fredde si possono provare anche profumi più forti. Abbiamo scelto per te i 5 migliori.",
+		"image": "https://cdn.notinoimg.com/images/gallery/it_fragrance_tip_autumn.jpg",
+		"date": "2017-09-27T11:10:08Z",
+		"author": "notino.it",
+		"__typename": "Article"
+	},
+	"Product:67469.relatedArticles.3": {
+		"title": "Come far durare più a lungo il tuo profumo",
+		"url": "https://www.notino.it/articoli/come-far-durare-piu-a-lungo-il-tuo-profumo/",
+		"description": "Leggi alcuni dei nostri migliori suggerimenti per far durare più a lungo il tuo profumo risparmiando qualche spruzzatina al giorno",
+		"image": "https://cdn.notinoimg.com/images/gallery/it_fragrance_tip_26_07_2017.jpg",
+		"date": "2017-08-09T12:50:00Z",
+		"author": "notino.it",
+		"__typename": "Article"
+	},
+	"$Product:67469.reviewSummary": {
+		"score": 5,
+		"totalVotes": 62,
+		"votes": {
+			"type": "json",
+			"json": {
+				"1": 2,
+				"3": 3,
+				"4": 14,
+				"5": 43
+			}
+		},
+		"ratings": [
+			{
+				"type": "id",
+				"generated": false,
+				"id": "ReviewRating:1",
+				"typename": "ReviewRating"
+			},
+			{
+				"type": "id",
+				"generated": false,
+				"id": "ReviewRating:2",
+				"typename": "ReviewRating"
+			},
+			{
+				"type": "id",
+				"generated": false,
+				"id": "ReviewRating:3",
+				"typename": "ReviewRating"
+			},
+			{
+				"type": "id",
+				"generated": false,
+				"id": "ReviewRating:4",
+				"typename": "ReviewRating"
+			}
+		],
+		"__typename": "ReviewSummary"
+	},
+	"ReviewRating:1": {
+		"id": 1,
+		"score": 4,
+		"ratingType": "DesignFlakon",
+		"__typename": "ReviewRating"
+	},
+	"ReviewRating:2": {
+		"id": 2,
+		"score": 4,
+		"ratingType": "PersistenceScent",
+		"__typename": "ReviewRating"
+	},
+	"ReviewRating:3": {
+		"id": 3,
+		"score": 4,
+		"ratingType": "Intensity",
+		"__typename": "ReviewRating"
+	},
+	"ReviewRating:4": {
+		"id": 4,
+		"score": 4,
+		"ratingType": "OverallImpresion",
+		"__typename": "ReviewRating"
+	},
+	"$ROOT_QUERY.Settings": {
+		"imageDomainPath": "https://cdn.notinoimg.com/",
+		"deliveriesDisplayMode": "Static",
+		"showUnitPrices": false,
+		"isWishlistAllowed": true,
+		"isNewShoppingCartEndpointEnabled": false,
+		"cloudflareSettings": {
+			"type": "id",
+			"generated": true,
+			"id": "$ROOT_QUERY.Settings.cloudflareSettings",
+			"typename": "Cloudflare"
+		},
+		"featureSwitches": {
+			"type": "id",
+			"generated": true,
+			"id": "$ROOT_QUERY.Settings.featureSwitches",
+			"typename": "FeatureSwitches"
+		},
+		"__typename": "Settings"
+	},
+	"$ROOT_QUERY.Settings.cloudflareSettings": {
+		"baseUrl": "https://cdn.notinoimg.com/cdn-cgi/image/",
+		"enabled": false,
+		"quality": 90,
+		"__typename": "Cloudflare"
+	},
+	"$ROOT_QUERY.Settings.featureSwitches": {
+		"modifaceMobileEnabled": "",
+		"modifaceDesktopEnabled": "",
+		"__typename": "FeatureSwitches"
+	},
+	"ROOT_QUERY.userProductsInfoByMasterIds({\"masterIds\":[\"67469\"]}).0": {
+		"productId": "67469",
+		"isComparison": false,
+		"__typename": "UserProductInfo"
+	},
+	"User:0": {
+		"id": "0",
+		"role": "Anonymous",
+		"cartId": "81540000-5685-0050-8CA6-08D8225CD809",
+		"comparisonIds": "[]",
+		"__typename": "User"
+	}
+}

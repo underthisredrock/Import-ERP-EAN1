@@ -117,7 +117,7 @@ $(document).ready(function() {
                 {
                      $i++;
                      print ("$i,$line<br>");
-                     ProcessLine3($line);
+                     ProcessLine1($line);
                      //ProcessLine1($line);
                      //ProcessLine2($line);
                      $line = fgets($file);

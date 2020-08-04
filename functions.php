@@ -48,124 +48,158 @@ function ProcessLine($path){
 function ProcessLine1($path){
     $filename = trim($path)."index.html";
     $doc = new DOMDocument();
-    $doc->loadHTMLFile($filename);
-    $xpath = new DOMXpath($doc);
-
+     try {
+        $doc->loadHTMLFile($filename);
+        $xpath = new DOMXpath($doc);
+    } catch (Exception $e) {
+        echo 'Caught exception: ',  $e->getMessage(), "\n";
+    }  
 
     $elements = $xpath->query("//*[@id='__APOLLO_STATE__']");
     if (!is_null($elements)) {
       foreach ($elements as $element) {
-        $nodeName= $element->nodeValue;
-               
-        $nodes = $element->childNodes;
-        foreach ($nodes as $node) {
-          echo $node->nodeValue. "\n"; //nodeValue fallisce perchè la stringa è troppo lunga
-          echo $node->nodeName. "\n";
-        }
+        $json= $element->nodeValue;
+        $err=GetValues($json);
+        echo $err;
       }
     }
 }
 
-// ProcessLine1 non funziona perchè non trova il testo dello script
-function ProcessLine2($path){
-    $filename = trim($path)."index.html";
-    try {
-        $handle = fopen($filename, "r");
-        $contents = fread($handle, filesize($filename));
-    } catch (Exception $e) {
+// GetValues legge i valori dal json e li scrive sul DB
+function GetValues($json){
+    
+try {
+        $obj=(json_decode($json));
+        
+    } 
+    catch (Exception $e) {
         echo 'Caught exception: ',  $e->getMessage(), "\n";
     }  
-    //echo $contents;
-    fclose($handle);
+  
+    $ROOT_QUERY= $obj->{'ROOT_QUERY'};
+    $ProductSsrData= $ROOT_QUERY->{'ProductSsrData'};
+    $tobj= $obj->{$ProductSsrData->id};
+    $id=$tobj->{'id'};
     
-    $apollo="";
-    preg_match_all('#<script(.*?)<\/script>#ims', $contents, $outs);
-    $n= count ($outs);
-    if ($n>=1) {
-    echo $n ."<br/>";
-    foreach ($outs[0] as $out) {
-       $apollo = implode('',$outs[0]);
-        echo $apollo;
-    }}
-
-}
-
-// ProcessLine1 non funziona perchè non trova il testo dello script
-function ProcessLine3($path){
-    $filename = trim($path)."index.html";
-    $doc = new DOMDocument();
-    $doc->loadHTMLFile($filename);
-    $xpath = new DOMXpath($doc);
-
-//*[@id="pdHeader"]/h1
+    var_dump('id = '.$id) ;
     
-    $elements = $xpath->query("//*[@id=\"pdHeader\"]/h1/span[2]");
-    //class="styled__TextNormal-aohf13-6 cnjxne"
-    if (!is_null($elements)) {
-      foreach ($elements as $element) {
-        $nodeName= $element->nodeName;
-        $nodeValue= $element->nodeValue; 
-        $nodes = $element->childNodes;
-        foreach ($nodes as $node) {
-          echo $node->nodeValue. "\n"; //nodeValue fallisce perchè la stringa è troppo lunga
-          echo $node->nodeName. "\n";
-        }
-      }
+    $id_stringa = strval($id);
+    var_dump('id_stringa = '.$id_stringa) ;
+    
+    $product_coded = ('Product:' . $id_stringa);
+    var_dump('product_coded = '.$product_coded) ;
+    
+    $tobj= $obj->{$product_coded};
+    
+    $brand=$tobj->{'brand'};
+    var_dump('brand = '.$brand) ; 
+
+    $brand_id = $tobj ->{'brandId'};
+    var_dump('brand_id = '.$brand_id) ; 
+   
+    $product_websites = $tobj ->{'url'};
+    var_dump('product_websites = '.$product_websites) ; 
+    
+    $collection = $tobj ->{'collection'};
+    var_dump('collection = '.$collection) ; 
+    
+    $annotation = $tobj ->{'annotation'};
+    var_dump('annotation = '.$annotation) ; 
+    
+    $subName = $tobj ->{'subName'};
+    var_dump('subName = '.$subName) ; 
+    
+    $code = $tobj ->{'code'};
+    var_dump('code = '.$code) ; 
+
+    $categoryPath = $tobj ->{'categoryPath'};
+    var_dump('categoryPath = '.$categoryPath) ; 
+
+    $kind = $tobj ->{'kind'};
+    var_dump('kind = '.$kind) ;   
+    
+    $ttobj = null;
+    $ttobj = $tobj -> {'category'};
+    $category = $ttobj -> {'json'};
+ 
+//   var_dump($category) ;   
+ // foreach($category as $cat) {var_dump($cat);}
+   
+    $category0 = $category [0];
+    $category1 = $category [1];
+    
+    $categories = ($category0.','.$category1);
+    var_dump('categories = '.$categories) ;
+    
+    $ttobj = null;
+    $ttobj = $tobj -> {'subCategory'};
+    $subcategory = $ttobj -> {'json'};
+    $subcategory0 = $subcategory [0];
+    $subcategory1 = $subcategory [1];
+    
+    $subcategories = ($subcategory0.','.$subcategory1);
+    var_dump('subcategories = '.$subcategories) ;
+ 
+    $marketType = $tobj ->{'marketType'};
+    var_dump('marketType = '.$marketType) ;   
+    
+    $manufacturer = $tobj ->{'manufacturer'};
+    var_dump('manufacturer = '.$manufacturer) ;   
+    
+    $description = $tobj ->{'description'};
+    var_dump('$description = '.$description) ; 
+    
+    $unit = $tobj ->{'unit'};
+    var_dump('$unit = '.$unit) ; 
+    
+    $unitAmount = $tobj ->{'unitAmount'};
+    var_dump('$unitAmount = '.$unitAmount) ; 
+    
+    $orderUnit = $tobj ->{'orderUnit'};
+    var_dump('$orderUnit = '.$orderUnit) ; 
+    
+    $variant_prod_code = ('$Variant:'.$id_stringa.'.price');
+    var_dump('$variant_prod_code = '.$variant_prod_code) ; 
+    
+    $tobj = NULL;
+    $tobj= $obj->{$variant_prod_code};
+    
+    $price_value = $tobj -> {'value'};
+    var_dump('$price_value = '.$price_value) ; 
+    
+    $price_currency = $tobj -> {'currency'};
+    var_dump('$price_currency = '.$price_currency) ; 
+    
+    $price_tax = $tobj -> {'tax'};
+    var_dump('$price_tax = '.$price_tax) ; 
+
+   
+    
+    
+    
+   // metodo inserimento in DB 
+
+    // $sqlInsert = "INSERT INTO `catalogo`(`categoryId`, `metaTitle`, 
+    //`metaKeywords`, `metaDescription`, `categoryCZ`, `categoryName`, 
+    //`URLKey`, `language`, `smallImage`, `image`, `description`, `summary`) 
+    //VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
+    // $paramType = "ssssssssssss";
+    // $paramArray = array( $categoryId, $metaTitle, $metaKeywords, 
+    //$metaDescription, $categoryCZ, $categoryName, $URLKey, $language, 
+    //$smallImage, $image, $description, $summary);
+    // $insertId = $db->insert($sqlInsert, $paramType, $paramArray);
+
+    //     if (! empty($insertId)) {
+    //     $type = "success";
+    //     $message = "Data Imported into the Database";
+    // } else {
+    //     $type = "error";
+    //     $message = "Problem in Importing Data";
+    //     }
+    // }
+
+    
+    
     }
-}
-
-function utf8_fopen_read($fileName) {
-    $fc = iconv('windows-1250', 'utf-8//TRANSLIT', file_get_contents($fileName));
-    $handle=fopen("php://memory", "rw");
-    fwrite($handle, $fc);
-    fseek($handle, 0);
-    return $handle;
-}
-
-function get_all_records(){
-    $con = getdb();
-    $Sql = "SELECT * FROM employeeinfo";
-    $result = mysqli_query($con, $Sql);  
-
-
-    if (mysqli_num_rows($result) > 0) {
-     echo "<div class='table-responsive'><table id='myTable' class='table table-striped table-bordered'>
-             <thead><tr><th>EMP ID</th>
-                          <th>First Name</th>
-                          <th>Last Name</th>
-                          <th>Email</th>
-                          <th>Registration Date</th>
-                        </tr></thead><tbody>";
-
-
-     while($row = mysqli_fetch_assoc($result)) {
-
-         echo "<tr><td>" . $row['emp_id']."</td>
-                   <td>" . $row['firstname']."</td>
-                   <td>" . $row['lastname']."</td>
-                   <td>" . $row['email']."</td>
-                   <td>" . $row['reg_date']."</td></tr>";        
-     }
-    
-     echo "</tbody></table></div>";
-     
-} else {
-     echo "you have no records";
-}
- if(isset($_POST["Export"])){
-     
-      header('Content-Type: text/csv; charset=utf-8');  
-      header('Content-Disposition: attachment; filename=data.csv');  
-      $output = fopen("php://output", "w");  
-      fputcsv($output, array('ID', 'First Name', 'Last Name', 'Email', 'Joining Date'));  
-      $query = "SELECT * from employeeinfo ORDER BY emp_id DESC";  
-      $result = mysqli_query($con, $query);  
-      while($row = mysqli_fetch_assoc($result))  
-      {  
-           fputcsv($output, $row);  
-      }  
-      fclose($output);  
- }  
-}
 
  ?>
